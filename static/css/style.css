@@ -1,4 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:500|Archivo+Narrow);
+/* @import url(http://fonts.googleapis.com/css?family=Raleway:500|Archivo+Narrow); */
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*=========================================
 Reset
@@ -17,7 +28,7 @@ body {
 	-webkit-font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 	height: 100%;
-	color:#777;
+	color:#565656;
 }
 
 p {
@@ -37,39 +48,27 @@ a {
 	height: 100%;
 }
 
-#badge {
-	position: absolute; bottom: 10px; right: 10px;
-	height: 48px; width: 48px;
-}
-
-#nav {
-	width: 100%;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-#nav ul {
-	margin: 0 auto;
-}
-
-#nav li {
-	display: inline-block;
-	padding: 10px;
+#greencircle {
+	margin: 10px auto 10px;
+	width: 200px;
+	height: 200px;
+	background-color: #2bcfa2;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	padding: 72px 0px 0px 24px;
+	line-height: 1.2em;
 }
 
 #intro {
-	border-bottom: 1px solid #ccc;
 	margin-bottom: 10px;
-	padding-bottom: 10px;
 }
 
 #thumbs {
-	overflow: auto;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	margin-bottom: 5px;
 }
 
 #thumbs li {
@@ -97,44 +96,46 @@ a {
 }
 
 #contact {
+	font:30px/1 'bebas_neueregular', sans-serif;
 	padding-bottom: 10px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid #ccc;
 }
 
 #contact li {
 	list-style: none;
 }
 
-.greencircle {
-	margin: 10px auto 10px;
-	width: 200px;
-	height: 200px;
-	background: #2bcfa2;
-	color: #fff;
-	border-radius: 100px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 24px;
-	font-weight: 500;
-	padding: 72px 0px 0px 24px;
-	line-height: 1.2em;
-}
-
-.orangecircle {
-	margin: 10px auto 10px;
-	width: 200px;
-	height: 200px;
-	background: #ffc022;
-	color: #fff;
-	border-radius: 100px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 24px;
-	font-weight: 500;
-	padding: 58px 0px 0px 39px;
-	line-height: 1.2em;
+#copyright {
+	text-align: right;
+	font-size: 16px;
+	background: rgba(0,0,0,0.8);
+	color: #eee;
+	padding: 10px;
 }
 
 .r1px {
 	margin-right: 1px;
+}
+
+.headline {
+	font:75px/1 'bebas_neueregular', sans-serif;
+	line-height: 1em;
+	color:#777;
+}
+
+.headlinesmall {
+	font:30px/1 'bebas_neueregular', sans-serif;
+	line-height: 1em;
+	color:#eee;
+	margin: 0 0 10px;
+	background: rgba(0,0,0,0.8);
+	width: intrinsic;
+	padding: 5px;
+}
+
+.blackbox {
+	background: rgba(0,0,0,0.6);
+	width: intrinsic;
+	padding: 0 7px 0 7px;
+	color: #eee;
 }
 

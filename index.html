@@ -11,24 +11,17 @@
 	
 	<title>Default</title>
 	
-
 </head>
 <body>
 	
 <div id="wrapper">
-<div class="greencircle">Web Design +<br>Development</div>
-<div id="nav">
-  <ul>
-    <li>About</li>
-    <li>Work</li>
-    <li>Contact</li>
-  </ul>
-</div>
+<div id="greencircle">Web Design +<br>Development</div>
 <div id="intro">
-<span style="font-size: 70px; line-height: 1em;">Hello, my name is Todd and I make websites.</span>
-<p>I like to keep it simple and make you happy in the process. Hiring someone to make a website can be daunting, I know this. My goal is to put you at ease and do all of the heavy lifting. Whether you just opened your first restaurant and need a website from scratch or your consulting business recently hit $10 million in revenue, I can help you out. <a href="#">Lets chat.</a></p>
+<h1 class="headline">Hello, my name is Todd and I make websites.</h1>
+<p>I like to keep it simple and make you happy in the process. I understand that hiring someone to create a website can be a daunting proposition. My goal is to put you at ease and do all of the heavy lifting. Whether you just opened your first restaurant and need a website from scratch or your consulting business recently hit $10 million in revenue, I can help. <a href="#">Lets chat.</a></p>
 </div>
 <div id="thumbs">
+<h2 class="headlinesmall">Recent Work</h2>
   <ul>
     <li><a class="fancybox r1px" rel="group" href="/static/images/lsfull.jpg"><img src="/static/images/lsthumb.jpg"></a></li>
     <li><a class="fancybox" rel="group" href="/static/images/tingafull.jpg"><img src="/static/images/tingathumb.jpg"></a></li>
@@ -37,19 +30,25 @@
   </ul>
 </div>
 <div id="contact">
+<h2 class="headlinesmall">Contact Me</h2>
 <ul>
-	<li><strong>Name:</strong> Todd Higginbotham</li>
-	<li><strong>Phone:</strong> 360-688-6117</li>
-	<li><strong>Email:</strong> contact@toddmakeswebsites.com <a href="mailto: contact@toddmakeswebsites.com">link</a></li>
+	<li>Name: <span style="color: #757575;">Todd Higginbotham</span></li>
+	<li>Phone:<span style="color: #757575;"> 360-688-6117</span></li>
+	<li>Email:<span style="color: #757575;"> contact@toddmakeswebsites.com</span></li>
 </ul>
 </div>
-<div class="orangecircle">Economical<br>Gourmet<br>Websites</div>
+<div id="copyright">
+&copy; 2014 Todd Higginbotham
+</div>
 </div>
 
 
 	
-	<script src="//code.jquery.com/jquery.min.js"></script>
+	<!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
+	<script src="/static/js/jquery-1.10.1.min.js"></script>
+	<script src="/static/js/jquery-ui.js"></script>
 	<script src="/static/js/main.js"></script>
+	
 	<!-- Add fancyBox -->
 	<link rel="stylesheet" href="/static/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
 	<script type="text/javascript" src="/static/fancybox/source/jquery.fancybox.pack.js"></script>
@@ -57,6 +56,15 @@
 	$(document).ready(function() {
 		$(".fancybox").fancybox();
 	});
+</script>
+<script type="text/javascript">
+$(document).ready(function() {  
+	setInterval(function() {
+		var theColors = Array('#2bcfa2','#f35c5c','#b1f35c','#5cd1f3');
+		var theColor = theColors[Math.floor(Math.random()*theColors.length)];
+		$('#greencircle').animate({backgroundColor: theColor}, 1000);
+    }, 4000);
+});  
 </script>
 	
 </body>

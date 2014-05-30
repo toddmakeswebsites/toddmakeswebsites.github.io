@@ -11,7 +11,6 @@
 	
 	<title>Default</title>
 	
-
 </head>
 <body>
 	
@@ -38,8 +37,11 @@
 
 
 	
-	<script src="//code.jquery.com/jquery.min.js"></script>
+	<!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
+	<script src="/static/js/jquery-1.10.1.min.js"></script>
+	<script src="/static/js/jquery-ui.js"></script>
 	<script src="/static/js/main.js"></script>
+	
 	<!-- Add fancyBox -->
 	<link rel="stylesheet" href="/static/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
 	<script type="text/javascript" src="/static/fancybox/source/jquery.fancybox.pack.js"></script>
@@ -47,6 +49,15 @@
 	$(document).ready(function() {
 		$(".fancybox").fancybox();
 	});
+</script>
+<script type="text/javascript">
+$(document).ready(function() {  
+	setInterval(function() {
+		var theColors = Array('#2bcfa2','#f35c5c','#b1f35c','#5cd1f3');
+		var theColor = theColors[Math.floor(Math.random()*theColors.length)];
+		$('#greencircle').animate({backgroundColor: theColor}, 1000);
+    }, 4000);
+});  
 </script>
 	
 </body>
